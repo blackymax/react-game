@@ -1,0 +1,371 @@
+@font-face {
+  font-family: Xephyr;
+  src: url(../fonts/Cyberpunks.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Xephyr;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#root .app-wrapper {
+  outline: none;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root .app-wrapper header {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a4445), color-stop(51%, #3cc0b1), to(#08f5e6));
+  background: linear-gradient(0deg, #0a4445 0%, #3cc0b1 51%, #08f5e6 100%);
+}
+
+#root .app-wrapper header h1 {
+  background-color: aqua;
+  border: 4px solid blueviolet;
+  border-radius: 10px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+#root .app-wrapper header h1:hover {
+  background-color: black;
+  color: white;
+}
+
+#root .app-wrapper header .app-header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 5%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .app-wrapper header .app-header-buttons button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+#root .app-wrapper header .app-header-buttons button img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+#root .app-wrapper header .app-header-buttons button:hover {
+  background-color: white;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  border: 2px solid blueviolet;
+}
+
+#root .app-wrapper header .app-header-buttons button:hover img path {
+  width: 40px;
+  height: 40px;
+}
+
+#root .app-wrapper header .app-header-buttons .active {
+  background-color: white;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  border: 2px solid blueviolet;
+}
+
+#root .app-wrapper main {
+  width: 80%;
+  outline: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 24px;
+}
+
+#root .app-wrapper main h3 {
+  background-color: aqua;
+  border: 4px solid blueviolet;
+  border-radius: 10px;
+}
+
+#root .app-wrapper main canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#root .app-wrapper main div {
+  margin: 0 auto;
+}
+
+#root .app-wrapper main button {
+  margin: 20px auto;
+}
+
+#root .app-wrapper main .active {
+  background-color: black;
+  color: white;
+}
+
+#root .app-wrapper main .app-about-game {
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  width: 80%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#root .app-wrapper main .app-about-game .app-about-game-modal {
+  text-align: center;
+  font-size: 32px;
+}
+
+#root .app-wrapper main .app-about-game .app-about-game-modal h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#root .app-wrapper main .app-about-game .app-about-game-modal h5 {
+  margin: 10px auto;
+}
+
+#root .app-wrapper main .app-about-game .app-about-game-modal .app-hotkeys-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  padding: 1% 0;
+}
+
+#root .app-wrapper main .app-about-game .app-about-game-modal .app-hotkeys-info div div {
+  border: 4px solid darkcyan;
+  width: 50px;
+  height: 50px;
+}
+
+#root .app-wrapper main .settings-window {
+  z-index: 100;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+}
+
+#root .app-wrapper main .settings-window h3 {
+  margin: 0;
+}
+
+#root .app-wrapper main .settings-window .parameters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .app-wrapper main .settings-window .parameters input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#root .app-wrapper main .settings-window .parameters button {
+  margin: 10px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#root .app-wrapper main .best-scores {
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  width: 80%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+}
+
+#root .app-wrapper main .best-scores table {
+  background-color: white;
+  padding: 5%;
+  border-radius: 10%;
+  margin: 0 auto;
+}
+
+#root .app-wrapper main .game-over {
+  z-index: 100;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 30%;
+  width: 70%;
+  left: 50%;
+  padding: 2%;
+  border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+}
+
+#root .app-wrapper main .pause-window {
+  z-index: 100;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 50%;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .app-wrapper main .start-game-block {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px auto;
+}
+
+#root .app-wrapper main .start-game-block button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+#root .app-wrapper main .start-game-block button:hover {
+  background-color: black;
+  color: white;
+}
+
+#root .app-wrapper main .start-game-block .active {
+  background-color: black;
+  color: white;
+}
+
+#root .app-wrapper footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+#root .app-wrapper footer .created-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#root .app-wrapper footer .created-block h3 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 60px;
+}
+
+#root .app-wrapper footer .created-block a {
+  font-size: 32px;
+  padding: 0;
+  line-height: 60px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#root .app-wrapper footer .created-block a:hover {
+  color: white;
+}
+
+#root .app-wrapper footer a {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#root .app-wrapper footer a img {
+  width: 100px;
+}
+
+#root .app-wrapper footer a:hover {
+  background-color: blueviolet;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+  #root .app-wrapper main .settings-window {
+    top: 10%;
+  }
+  #root .app-wrapper main .app-about-game {
+    top: 10%;
+  }
+  #root .app-wrapper footer .created-block h3 {
+    font-size: 16px;
+  }
+  #root .app-wrapper footer .created-block a {
+    font-size: 16px;
+  }
+  #root .app-wrapper footer a img {
+    width: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
