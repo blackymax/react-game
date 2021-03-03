@@ -1,0 +1,55 @@
+@import "~normalize.css";
+@import "roboto.scss";
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(33, 95, 211);
+  header{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    h1{
+      width: max-content;
+    }
+  }
+  main{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    .app-game-field{
+      margin: 0 auto;
+      width: 454px;
+      height: 450px;
+      .app-field{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px outset black;
+        .app-box{
+          text-align: center;
+          line-height: 50px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .app-additional-zone{
+        display: flex;
+        div{
+          background-color: red;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          margin: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
